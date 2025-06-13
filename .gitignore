@@ -1,0 +1,28 @@
+# Ignore Python virtual environment folder
+venv/
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# VSCode settings
+.vscode/
+
+# Environment variable files
+*.env
+
+# macOS and Linux
+.DS_Store
+*.swp
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Log and coverage files
+*.log
+*.coverage
+htmlcov/
+
+# pip freeze output
+requirements*.txt
