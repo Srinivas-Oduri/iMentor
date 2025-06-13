@@ -9,9 +9,6 @@ __pycache__/
 # VSCode settings
 .vscode/
 
-# Environment variable files
-*.env
-
 # macOS and Linux
 .DS_Store
 *.swp
@@ -23,6 +20,3 @@ __pycache__/
 *.log
 *.coverage
 htmlcov/
-
-# pip freeze output
-requirements*.txt
