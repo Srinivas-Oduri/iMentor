@@ -109,4 +109,9 @@ MIT License
 | Deepika Saladi                     | `@DeepikaSaladi2005`          | Implemented persistent chat history functionality, multiformat file upload along with rename and deletion features|
 | Sree Taraka Vamsi Krishna Jakkani  | `@SreeTarak2`                 | Developed speech-to-text search feature and oversees future project updates            |
 
+| ▶️ Demonstartion Video                                                                    | 🔗 Link                                                   |
+| ------------------------------------------------------------------------------ | --------------------------------------------------------- |
+| ![YouTube](https://img.icons8.com/ios-filled/24/youtube-play.png) YouTube Demo | [Watch Demo](https://youtu.be/eyqlO0Udxmo?si=Ezv2BABcflfrH9ft) |
+
+
 
