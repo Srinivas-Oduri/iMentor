@@ -58,7 +58,7 @@ default_pdfs/        # Default/canned PDFs
 
 ```bash
 
-   pip install -r requirements.txt
+   pip install -r backend/requirements.txt
 
 ```
 
@@ -111,7 +111,7 @@ MIT License
 
 | ▶️ Demonstartion Video                                                                    | 🔗 Link                                                   |
 | ------------------------------------------------------------------------------ | --------------------------------------------------------- |
-| ![YouTube](https://img.icons8.com/ios-filled/24/youtube-play.png) YouTube Demo | [Watch Demo](https://youtu.be/eyqlO0Udxmo?si=Ezv2BABcflfrH9ft) |
+| ![YouTube](https://img.icons8.com/ios-filled/24/youtube-play.png) YouTube| [Watch](https://youtu.be/eyqlO0Udxmo?si=Ezv2BABcflfrH9ft) |
 
 
 
