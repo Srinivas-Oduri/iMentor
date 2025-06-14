@@ -390,7 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     actionsDiv.style.marginBottom = "0.25rem";
 
                     const copyLink = document.createElement('span');
-                    copyLink.textContent = '📋 Copy';
+                    copyLink.textContent = '📋.';
                     copyLink.style.cursor = 'pointer';
                     copyLink.style.color = '#0d6efd';
                     copyLink.style.fontSize = '0.95em';
@@ -403,11 +403,11 @@ document.addEventListener('DOMContentLoaded', () => {
                         const textToCopy = tempElem.innerText;
                         navigator.clipboard.writeText(textToCopy);
                         copyLink.textContent = '✅ Copied!';
-                        setTimeout(() => copyLink.textContent = '📋 Copy', 1200);
+                        setTimeout(() => copyLink.textContent = '📋.', 1200);
                     };
 
                     const speakLink = document.createElement('span');
-                    speakLink.textContent = '🔊 Speak';
+                    speakLink.textContent = '🔊.';
                     speakLink.style.cursor = 'pointer';
                     speakLink.style.color = '#198754';
                     speakLink.style.fontSize = '0.95em';
@@ -419,15 +419,15 @@ document.addEventListener('DOMContentLoaded', () => {
                         const textToSpeak = tempElem.innerText;
                         const utterance = new SpeechSynthesisUtterance(textToSpeak);
                         if(!window.speechSynthesis.speaking){
-                            speakLink.textContent = '🔇 Stop';
+                            speakLink.textContent = '🔇.';
                             window.speechSynthesis.speak(utterance);
                         }
                         else{
-                            speakLink.textContent = '🔊 Speak';
+                            speakLink.textContent = '🔊.';
                             window.speechSynthesis.cancel();
                         }
                         utterance.onend = function() {
-                            speakLink.textContent = '🔊 Speak';
+                            speakLink.textContent = '🔊.';
                         }
                     };
 
@@ -1007,14 +1007,14 @@ if (voiceInputButton) {
                     const audioBlob = new Blob(audioChunks, { type: 'audio/webm' });
                     const formData = new FormData();
                     formData.append('audio', audioBlob, 'recording.webm');
-                    setChatStatus('Transcribing...');
+                    setChatStatus('Ready');
                     try {
                         const response = await fetch('/transcribe', { method: 'POST', body: formData });
                         const data = await response.json();
                         chatInput.value = data.transcript || '';
                         setChatStatus('Ready');
                     } catch (e) {
-                        setChatStatus('Transcription failed', 'danger');
+                        
                     }
                 };
             } catch (e) {

@@ -474,7 +474,7 @@ select optgroup { font-style: italic; font-weight: bold; color: var(--bs-info); 
 
 /* Truncate long session titles and keep dropdown visible */
 .session-title {
-  max-width: 120px;
+  max-width: 200px;
   flex: 1 1 auto;
   overflow: hidden;
   text-overflow: ellipsis;

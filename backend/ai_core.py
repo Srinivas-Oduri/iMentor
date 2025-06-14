@@ -452,8 +452,8 @@ def perform_rag_search(query: str, user_email=None) -> tuple[list[Document], str
         final_context_docs_with_scores = sorted_unique_docs[:config.RAG_CHUNK_K]
         context_docs = [doc for doc, score in final_context_docs_with_scores]
 
-        logger.info(f"Retrieved {len(all_retrieved_docs_with_scores)} chunks total across sub-queries. "
-                    f"Selected {len(context_docs)} unique chunks (target k={config.RAG_CHUNK_K}) for context.")
+        # logger.info(f"Retrieved {len(all_retrieved_docs_with_scores)} chunks total across sub-queries. "
+        #             f"Selected {len(context_docs)} unique chunks (target k={config.RAG_CHUNK_K}) for context.")
 
         # Step 4: Format Context for LLM Prompt and Create Citation Map
         formatted_context_parts = []
